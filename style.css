@@ -1,0 +1,50 @@
+body {
+    background-color: #949292;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.card {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 320px;
+    max-width: 90vw;
+    margin-left: 140px;
+}
+
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 120px;
+    height: 100vh;
+    background: #222;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    padding-top: 2rem;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.08);
+    z-index: 10;
+}
+
+.tab {
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    font-size: 1.1rem;
+    border: none;
+    background: none;
+    transition: background 0.2s;
+}
+.tab:hover, .tab.active {
+    background: #444;
+}
